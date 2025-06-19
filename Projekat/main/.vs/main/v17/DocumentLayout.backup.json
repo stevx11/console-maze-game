@@ -1,0 +1,161 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\fax\\3.semestar\\Objektno orijentisano programiranje 2\\Projekat\\main\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A1702570-7633-47AB-AEE4-ADAB8C7E6D70}|main.vcxproj|C:\\Users\\Stevo\\source\\repos\\stevx11\\OOP2_projekat\\projekat\\Labyrinth.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1702570-7633-47AB-AEE4-ADAB8C7E6D70}|main.vcxproj|C:\\Users\\Stevo\\source\\repos\\stevx11\\OOP2_projekat\\projekat\\Labyrinth.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1702570-7633-47AB-AEE4-ADAB8C7E6D70}|main.vcxproj|C:\\Users\\Stevo\\source\\repos\\stevx11\\OOP2_projekat\\projekat\\Items.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Visual Studio\\VC\\Tools\\MSVC\\14.41.34120\\include\\vector||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1702570-7633-47AB-AEE4-ADAB8C7E6D70}|main.vcxproj|C:\\Users\\Stevo\\source\\repos\\stevx11\\OOP2_projekat\\projekat\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1702570-7633-47AB-AEE4-ADAB8C7E6D70}|main.vcxproj|C:\\Users\\Stevo\\source\\repos\\stevx11\\OOP2_projekat\\projekat\\Robot.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1702570-7633-47AB-AEE4-ADAB8C7E6D70}|main.vcxproj|C:\\Users\\Stevo\\source\\repos\\stevx11\\OOP2_projekat\\projekat\\Minotaur.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1702570-7633-47AB-AEE4-ADAB8C7E6D70}|main.vcxproj|C:\\Users\\Stevo\\source\\repos\\stevx11\\OOP2_projekat\\projekat\\Utils.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1702570-7633-47AB-AEE4-ADAB8C7E6D70}|main.vcxproj|C:\\Users\\Stevo\\source\\repos\\stevx11\\OOP2_projekat\\projekat\\Robot.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1702570-7633-47AB-AEE4-ADAB8C7E6D70}|main.vcxproj|C:\\Users\\Stevo\\source\\repos\\stevx11\\OOP2_projekat\\projekat\\Minotaur.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "vector",
+              "DocumentMoniker": "D:\\Visual Studio\\VC\\Tools\\MSVC\\14.41.34120\\include\\vector",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Visual Studio\\VC\\Tools\\MSVC\\14.41.34120\\include\\vector",
+              "ToolTip": "D:\\Visual Studio\\VC\\Tools\\MSVC\\14.41.34120\\include\\vector",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Visual Studio\\VC\\Tools\\MSVC\\14.41.34120\\include\\vector",
+              "ViewState": "AgIAAFYHAAAAAAAAAAAAwGkHAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-30T19:36:16.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Items.h",
+              "DocumentMoniker": "C:\\Users\\Stevo\\source\\repos\\stevx11\\OOP2_projekat\\projekat\\Items.h",
+              "ToolTip": "C:\\Users\\Stevo\\source\\repos\\stevx11\\OOP2_projekat\\projekat\\Items.h",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAADAAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-21T23:11:34.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Minotaur.cpp",
+              "DocumentMoniker": "C:\\Users\\Stevo\\source\\repos\\stevx11\\OOP2_projekat\\projekat\\Minotaur.cpp",
+              "ToolTip": "C:\\Users\\Stevo\\source\\repos\\stevx11\\OOP2_projekat\\projekat\\Minotaur.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-20T15:45:02.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Minotaur.h",
+              "DocumentMoniker": "C:\\Users\\Stevo\\source\\repos\\stevx11\\OOP2_projekat\\projekat\\Minotaur.h",
+              "ToolTip": "C:\\Users\\Stevo\\source\\repos\\stevx11\\OOP2_projekat\\projekat\\Minotaur.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-20T15:44:55.964Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Robot.cpp",
+              "DocumentMoniker": "C:\\Users\\Stevo\\source\\repos\\stevx11\\OOP2_projekat\\projekat\\Robot.cpp",
+              "ToolTip": "C:\\Users\\Stevo\\source\\repos\\stevx11\\OOP2_projekat\\projekat\\Robot.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-20T15:44:46.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Robot.h",
+              "DocumentMoniker": "C:\\Users\\Stevo\\source\\repos\\stevx11\\OOP2_projekat\\projekat\\Robot.h",
+              "ToolTip": "C:\\Users\\Stevo\\source\\repos\\stevx11\\OOP2_projekat\\projekat\\Robot.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-20T15:44:35.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Labyrinth.cpp",
+              "DocumentMoniker": "C:\\Users\\Stevo\\source\\repos\\stevx11\\OOP2_projekat\\projekat\\Labyrinth.cpp",
+              "ToolTip": "C:\\Users\\Stevo\\source\\repos\\stevx11\\OOP2_projekat\\projekat\\Labyrinth.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMMAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-20T15:42:17.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Labyrinth.h",
+              "DocumentMoniker": "C:\\Users\\Stevo\\source\\repos\\stevx11\\OOP2_projekat\\projekat\\Labyrinth.h",
+              "ToolTip": "C:\\Users\\Stevo\\source\\repos\\stevx11\\OOP2_projekat\\projekat\\Labyrinth.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-20T15:42:03.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Utils.cpp",
+              "DocumentMoniker": "C:\\Users\\Stevo\\source\\repos\\stevx11\\OOP2_projekat\\projekat\\Utils.cpp",
+              "ToolTip": "C:\\Users\\Stevo\\source\\repos\\stevx11\\OOP2_projekat\\projekat\\Utils.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-20T15:36:31.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\Stevo\\source\\repos\\stevx11\\OOP2_projekat\\projekat\\main.cpp",
+              "ToolTip": "C:\\Users\\Stevo\\source\\repos\\stevx11\\OOP2_projekat\\projekat\\main.cpp",
+              "ViewState": "AgIAACcAAAAAAAAAAAAYwCEAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-20T15:36:02.459Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
