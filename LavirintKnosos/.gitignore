@@ -1,0 +1,55 @@
+# Build results
+[Bb]in/
+[Oo]bj/
+*.obj
+*.exe
+*.dll
+*.lib
+*.pdb
+*.ilk
+*.idb
+
+# Visual Studio files
+.vs/
+*.vcxproj.user
+*.suo
+*.sdf
+*.opensdf
+*.VC.db
+*.cache
+*.log
+
+# Temporary files
+*.tmp
+*.log
+*.tlog
+*.ipch
+
+# Backup files
+*~
+*.bak
+
+# CMake files (if using CMake)
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# User-specific files
+*.user
+*.userosscache
+*.sln.docstates
+
+# Crash and debug files
+*.dmp
+
+# Build configuration folders
+Debug/
+Release/
+x64/
+x86/
+ARM/
+ARM64/
+
+# Optional: Ignore your compiled output folder if named differently
+build/
