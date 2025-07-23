@@ -197,7 +197,15 @@ std::pair<int, int> Labyrinth::getRandomPosition() const {
 }
 
 char Labyrinth::getCell(const std::pair<int, int>& position) const {
-    return grid[position.first][position.second];
+    int row = position.first;
+    int col = position.second;
+
+    if (row >= 0 && row < rows && col >= 0 && col < columns) {
+        return grid[row][col];
+    }
+
+    // Return a special character or throw an exception
+    return '#'; // wall, or any "invalid" indicator
 }
 
 int Labyrinth::getRows() const {
