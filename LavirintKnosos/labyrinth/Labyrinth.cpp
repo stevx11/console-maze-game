@@ -4,7 +4,7 @@
 #include <ctime>
 #include <queue>
 
-Labyrinth::Labyrinth(int r, int c, int items, std::pair<int, int> startAndEndPoint) : rows(r), columns(c), numberOfItems(items), startAndEndColumn(startAndEndPoint){
+Labyrinth::Labyrinth(int r, int c, int items, std::pair<int, int> startAndEndPoint) : rows(r), columns(c), numberOfItems(items), startAndEndColumn(startAndEndPoint) {
     grid = new char* [rows];
     for (int i = 0; i < rows; ++i) {
         grid[i] = new char[columns];
@@ -61,6 +61,7 @@ void Labyrinth::placeRobotAndExit() {
         grid[rows - 2][exitCol] = '.';
     }
 }
+
 void Labyrinth::generateInnerWalls() {
     // Fill the entire maze with walls then delete the ones which disrupt passability
     for (int i = 0; i < rows; ++i) {
@@ -70,6 +71,7 @@ void Labyrinth::generateInnerWalls() {
         }
     }
 }
+
 void Labyrinth::ensurePassability() {
     // Calculate minimum required walls
     int minWalls = 2 * (rows + columns);
@@ -123,7 +125,6 @@ void Labyrinth::ensurePassability() {
     }
 }
 
-
 void Labyrinth::display() const {
     for (int i = 0; i < rows; ++i) {
         for (int j = 0; j < columns; ++j) {
@@ -132,6 +133,27 @@ void Labyrinth::display() const {
         std::cout << std::endl;
     }
 }
+
+void Labyrinth::displayWithFog(const std::pair<int, int>& robotPosition) const {
+    int robotRow = robotPosition.first;
+    int robotCol = robotPosition.second;
+
+    for (int i = 0; i < rows; ++i) {
+        for (int j = 0; j < columns; ++j) {
+            // Check if this cell is within the 3x3 visible area around the robot
+            bool isVisible = (abs(i - robotRow) <= 1 && abs(j - robotCol) <= 1);
+
+            if (isVisible) {
+                std::cout << grid[i][j] << " ";
+            }
+            else {
+                std::cout << "  ";  // Show fog for non-visible areas
+            }
+        }
+        std::cout << std::endl;
+    }
+}
+
 void Labyrinth::placeItems() {
     int itemsPlaced = 0;
     while (itemsPlaced < numberOfItems) {
@@ -185,6 +207,7 @@ std::pair<int, int> Labyrinth::getExit() const {
     std::pair<int, int> LabyrinthExit = { getRows() - 1, startAndEndColumn.second };
     return LabyrinthExit;
 }
+
 std::pair<int, int> Labyrinth::getEntry() const {
     std::pair<int, int> LabyrinthEntry = { 0, startAndEndColumn.first };
     return LabyrinthEntry;
