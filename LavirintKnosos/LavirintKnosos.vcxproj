@@ -133,6 +133,8 @@
     <ClInclude Include="items\Items.h" />
     <ClInclude Include="labyrinth\Generator.h" />
     <ClInclude Include="labyrinth\Labyrinth.h" />
+    <ClInclude Include="utils\Timer.h" />
+    <ClInclude Include="utils\Utils.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="game\Game.cpp" />
@@ -141,6 +143,8 @@
     <ClCompile Include="labyrinth\Generator.cpp" />
     <ClCompile Include="labyrinth\Labyrinth.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="utils\Timer.cpp" />
+    <ClCompile Include="utils\Utils.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

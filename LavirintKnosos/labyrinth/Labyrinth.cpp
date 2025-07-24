@@ -63,65 +63,37 @@ void Labyrinth::placeRobotAndExit() {
 }
 
 void Labyrinth::generateInnerWalls() {
-    // Fill the entire maze with walls then delete the ones which disrupt passability
-    for (int i = 0; i < rows; ++i) {
-        for (int j = 0; j < columns; ++j) {
-            if (grid[i][j] == '.')
-                grid[i][j] = '#';
-        }
-    }
-}
+    int innerWallCount = 0;
+    for (int i = 2; i < rows - 2; i += 2) {
+        for (int j = 2; j < columns - 2; j += 2) {
+            // Skip placing a wall with 30% chance to create variation
+            if (rand() % 100 < 5) continue;
 
-void Labyrinth::ensurePassability() {
-    // Calculate minimum required walls
-    int minWalls = 2 * (rows + columns);
+            // Avoid overwriting robot or exit zones
+            if ((i == 1 && j == startAndEndColumn.first) || (i == rows - 2 && j == startAndEndColumn.second)) continue;
 
-    // Remove walls randomly until we meet the requirement
-    int currentWalls = (rows - 2) * (columns - 2);
-    while (currentWalls > minWalls) {
-        int x = 1 + std::rand() % (rows - 2);
-        int y = 1 + std::rand() % (columns - 2);
+            grid[i][j] = '#';
+            innerWallCount += 1;
 
-        if (grid[x][y] == '#') {
-            grid[x][y] = '.';
-            --currentWalls;
-        }
-    }
+            // Randomly block one neighboring direction to connect it
+            int dir = rand() % 4;
+            int dx = 0, dy = 0;
+            if (dir == 0) dx = -1;
+            else if (dir == 1) dx = 1;
+            else if (dir == 2) dy = -1;
+            else dy = 1;
 
-    // Ensure that the labyrinth is passable using BFS
-    std::vector<std::vector<bool>> visited(rows, std::vector<bool>(columns, false));
-    std::queue<std::pair<int, int>> q;
-    q.push({ 1, 1 });
-    visited[1][1] = true;
+            int ni = i + dx;
+            int nj = j + dy;
 
-    while (!q.empty()) {
-        std::pair<int, int> current = q.front();
-        int cx = current.first;
-        int cy = current.second;
-        q.pop();
-
-        for (const std::pair<int, int>& direction : std::vector<std::pair<int, int>>{ {0, 1}, {1, 0}, {0, -1}, {-1, 0} }) {
-            int dx = direction.first;
-            int dy = direction.second;
-            int nx = cx + dx;
-            int ny = cy + dy;
-
-            if (nx >= 1 && nx < rows - 1 && ny >= 1 && ny < columns - 1 &&
-                !visited[nx][ny] && grid[nx][ny] == '.') {
-                visited[nx][ny] = true;
-                q.push({ nx, ny });
+            if (ni >= 1 && ni < rows - 1 && nj >= 1 && nj < columns - 1) {
+                grid[ni][nj] = '#';
+                innerWallCount += 1;
             }
         }
     }
-
-    // If any reachable cell is still surrounded, make adjustments
-    for (int i = 1; i < rows - 1; ++i) {
-        for (int j = 1; j < columns - 1; ++j) {
-            if (!visited[i][j] && grid[i][j] == '.') {
-                grid[i][j] = '#';
-                ++currentWalls;
-            }
-        }
+    if (innerWallCount < (2 * (rows + columns))) {
+        generateInnerWalls();
     }
 }
 

@@ -21,7 +21,6 @@ public:
     void generateOuterWalls();
     void placeRobotAndExit();
     void generateInnerWalls();
-    void ensurePassability();
     void placeItems();
     void clearItems();
     void display() const;

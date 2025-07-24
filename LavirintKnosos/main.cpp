@@ -9,8 +9,8 @@
 #include "./game/Minotaur.h"
 #include "./items/Items.h"
 #include "./labyrinth/Generator.h"
-#include "game/Game.h"
-//#include "Utils.h"
+#include "./game/Game.h"
+#include "./utils/Utils.h"
 
 int main(int argc, char* argv[]) {
     // Check the validity of command line arguments
@@ -29,11 +29,18 @@ int main(int argc, char* argv[]) {
         std::cerr << "Rows and columns must be >= 15, and the number of items must be >= 3.\n";
         return 1;
     }
-     int startPoint = 1 + std::rand() % (columns - 2);
-     int endPoint = 1 + std::rand() % (columns - 2);
-    // Generate the labyrinth
-    Labyrinth* labyrinth = Generator::generate(rows, columns, numberOfItems, {startPoint,endPoint});
+
+    int startPoint = 1 + std::rand() % (columns - 2);
+    int endPoint = 1 + std::rand() % (columns - 2);
+
+    std::cout << "Generating labyrinth (" << rows << "x" << columns << ") with " << numberOfItems << " items...\n";
+
+    // Generate the labyrinth (timing is handled inside Generator::generate)
+    Labyrinth* labyrinth = Generator::generate(rows, columns, numberOfItems, { startPoint, endPoint });
+
+    // Start the game
     Game game(labyrinth);
     game.run();
+
     return 0;
 }

@@ -1,0 +1,114 @@
+===== LABYRINTH GENERATION REPORT =====
+Dimensions: 15x15 (225 total cells)
+Items: 15
+Generation Time: 0.152 ms
+==========================================
+
+===== LABYRINTH GENERATION REPORT =====
+Dimensions: 15x15 (225 total cells)
+Items: 15
+Generation Time: 0.168 ms
+==========================================
+
+===== LABYRINTH GENERATION REPORT =====
+Dimensions: 15x15 (225 total cells)
+Items: 15
+Generation Time: 0.308 ms
+==========================================
+
+===== LABYRINTH GENERATION REPORT =====
+Dimensions: 15x15 (225 total cells)
+Items: 15
+Generation Time: 0.274 ms
+==========================================
+
+===== LABYRINTH GENERATION REPORT =====
+Dimensions: 15x15 (225 total cells)
+Items: 15
+Generation Time: 0.207 ms
+==========================================
+
+===== LABYRINTH GENERATION REPORT =====
+Dimensions: 15x15 (225 total cells)
+Items: 5
+Generation Time: 0.273 ms
+==========================================
+
+===== LABYRINTH GENERATION REPORT =====
+Dimensions: 15x15 (225 total cells)
+Items: 5
+Generation Time: 0.066 ms
+==========================================
+
+===== LABYRINTH GENERATION REPORT =====
+Dimensions: 15x15 (225 total cells)
+Items: 5
+Generation Time: 0.052 ms
+==========================================
+
+===== LABYRINTH GENERATION REPORT =====
+Dimensions: 15x15 (225 total cells)
+Items: 5
+Generation Time: 0.041 ms
+==========================================
+
+===== LABYRINTH GENERATION REPORT =====
+Dimensions: 15x15 (225 total cells)
+Items: 5
+Generation Time: 0.039 ms
+==========================================
+
+===== LABYRINTH GENERATION REPORT =====
+Dimensions: 15x15 (225 total cells)
+Items: 5
+Generation Time: 0.037 ms
+==========================================
+
+===== LABYRINTH GENERATION REPORT =====
+Dimensions: 15x15 (225 total cells)
+Items: 5
+Generation Time: 0.086 ms
+==========================================
+
+===== LABYRINTH GENERATION REPORT =====
+Dimensions: 15x15 (225 total cells)
+Items: 5
+Generation Time: 0.046 ms
+==========================================
+
+===== LABYRINTH GENERATION REPORT =====
+Dimensions: 15x15 (225 total cells)
+Items: 5
+Generation Time: 0.053 ms
+==========================================
+
+===== LABYRINTH GENERATION REPORT =====
+Dimensions: 15x15 (225 total cells)
+Items: 5
+Generation Time: 0.077 ms
+==========================================
+
+===== LABYRINTH GENERATION REPORT =====
+Dimensions: 15x15 (225 total cells)
+Items: 5
+Generation Time: 0.054 ms
+==========================================
+
+===== LABYRINTH GENERATION REPORT =====
+Dimensions: 15x15 (225 total cells)
+Items: 5
+Generation Time: 0.041 ms
+==========================================
+
+===== LABYRINTH GENERATION REPORT =====
+Dimensions: 15x15 (225 total cells)
+Items: 5
+Generation Time: 0.034 ms
+==========================================
+
+===== LABYRINTH GENERATION REPORT =====
+Dimensions: 15x15 (225 total cells)
+Items: 5
+Generation Time: 0.051 ms
+==========================================
+
