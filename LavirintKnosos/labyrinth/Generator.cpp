@@ -1,3 +1,10 @@
+/*
+ * Generator.cpp - Implementation of labyrinth generation
+ * Timed generation process with performance logging
+ * Author: SV65/2023
+ * Last modified: 26.07.2025
+ */
+
 #include "Generator.h"
 #include "../utils/Timer.h"
 #include "../utils/Utils.h"
@@ -5,39 +12,38 @@
 #include <ctime>
 #include <iostream>
 
+ // Generate complete labyrinth with timing and performance logging
+ // Parameters: rows, columns - labyrinth dimensions (minimum 15x15)
+ //            numberOfItems - items to place (minimum 3)
+ //            startAndEndColumn - entry and exit column positions
+ // Returns: pointer to fully generated labyrinth
 Labyrinth* Generator::generate(int rows, int columns, int numberOfItems, std::pair<int, int> startAndEndColumn) {
-    std::srand(std::time(nullptr));  // Ensure randomness
+    std::srand(std::time(nullptr));  // Initialize random seed, ensures labyrinth will be different every time
 
-    // Start timing the generation process
+    // Start performance timing
     Timer generationTimer;
     generationTimer.start();
 
+    // Create empty labyrinth
     Labyrinth* lab = new Labyrinth(rows, columns, numberOfItems, startAndEndColumn);
 
-    // Step-by-step generation with individual timing (optional for debugging)
-    lab->generateOuterWalls();
-    lab->generateInnerWalls();
-    lab->placeItems();
-    lab->placeRobotAndExit();
+    // Execute generation steps in sequence
+    lab->generateOuterWalls();    // Create perimeter
+    lab->generateInnerWalls();    // Create maze structure
+    lab->placeItems();            // Add collectible items
+    lab->placeRobotAndExit();     // Position robot, entry and exit
 
-    // Stop timing
+    // Stop timing and collect performance data
     generationTimer.stop();
-
-    // Get generation time
     double generationTimeMs = generationTimer.getElapsedMilliseconds();
 
-    // Create detailed report
+    // Create detailed performance report
     std::string report = Utils::formatGenerationReport(
         rows, columns, numberOfItems, generationTimeMs);
 
-    // Write to detailed log file
+    // Log performance data to file
     std::string logFilename = "labyrinth_generation_log.txt";
     Utils::appendToFile(logFilename, report);
-
-    // Console output
-    std::cout << "Labyrinth generated successfully!\n";
-    std::cout << "Generation time: " << generationTimer.getFormattedTime() << "\n";
-    std::cout << "Performance data written to: " << logFilename;
 
     return lab;
 }

@@ -1,14 +1,23 @@
-﻿#include "Timer.h"
+﻿/*
+ * Timer.cpp - Implementation of high precision timing
+ * Precision timing using std::chrono
+ * Author: SV65/2023
+ * Last modified: 26.07.2025
+ */
+
+#include "Timer.h"
 #include <sstream>
 #include <iomanip>
 
 Timer::Timer() : isRunning(false) {}
 
+// Start the timer - records current high resolution time point
 void Timer::start() {
     startTime = std::chrono::high_resolution_clock::now();
     isRunning = true;
 }
 
+// Stop the timer - records end time point
 void Timer::stop() {
     if (isRunning) {
         endTime = std::chrono::high_resolution_clock::now();
@@ -16,12 +25,15 @@ void Timer::stop() {
     }
 }
 
+// Reset timer to initial state
 void Timer::reset() {
     isRunning = false;
     startTime = std::chrono::high_resolution_clock::time_point();
     endTime = std::chrono::high_resolution_clock::time_point();
 }
 
+// Calculate elapsed time in milliseconds
+// Uses current time if timer is still running
 double Timer::getElapsedMilliseconds() const {
     if (isRunning) {
         auto currentTime = std::chrono::high_resolution_clock::now();
@@ -34,6 +46,7 @@ double Timer::getElapsedMilliseconds() const {
     }
 }
 
+// Calculate elapsed time in microseconds
 double Timer::getElapsedMicroseconds() const {
     if (isRunning) {
         auto currentTime = std::chrono::high_resolution_clock::now();
@@ -46,6 +59,7 @@ double Timer::getElapsedMicroseconds() const {
     }
 }
 
+// Calculate elapsed time in nanoseconds (highest precision)
 double Timer::getElapsedNanoseconds() const {
     if (isRunning) {
         auto currentTime = std::chrono::high_resolution_clock::now();
@@ -58,10 +72,13 @@ double Timer::getElapsedNanoseconds() const {
     }
 }
 
+// Calculate elapsed time in seconds
 double Timer::getElapsedSeconds() const {
     return getElapsedMilliseconds() / 1000.0;
 }
 
+// Get human-readable formatted time string with appropriate units
+// Automatically selects best unit (nanoseconds, microseconds, milliseconds or seconds)
 std::string Timer::getFormattedTime() const {
     double ms = getElapsedMilliseconds();
     std::stringstream ss;
