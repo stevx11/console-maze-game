@@ -137,7 +137,7 @@ void Game::writeGameReport() {
 
     report << "\n========== GAME SESSION REPORT ==========\n";
     report << "Game Outcome: " << gameOutcome << "\n";
-    report << "\n--- COMPLETE LABYRINTH (FOG REMOVED) ---\n";
+    report << "\n--------- COMPLETE LABYRINTH ---------\n";
     report << Utils::labyrinthToString(*labyrinth);
     report << "\n==========================================\n\n";
 
