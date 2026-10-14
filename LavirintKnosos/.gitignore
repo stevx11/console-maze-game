@@ -24,6 +24,8 @@
 *.log
 *.tlog
 *.ipch
+*.txt
+*.docx
 
 # Backup files
 *~

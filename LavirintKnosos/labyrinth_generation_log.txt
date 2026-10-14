@@ -1,0 +1,6 @@
+===== LABYRINTH GENERATION REPORT =====
+Dimensions: 50x50 (2500 total cells)
+Items: 50
+Generation Time: 0.131 ms
+==========================================
+
