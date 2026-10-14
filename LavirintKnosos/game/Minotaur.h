@@ -32,6 +32,8 @@ public:
 
     // Check if minotaur is still alive
     bool getIsAlive() const;
+
+    void setIsAlive(bool status);
 };
 
 #endif // MINOTAUR_H

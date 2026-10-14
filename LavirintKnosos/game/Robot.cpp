@@ -51,6 +51,18 @@ char Robot::move(Labyrinth& labyrinth) {
         }
     }
 
+    if (cellContent == 'M') {
+        if (powerUps.hasSword()) {
+            return 'K';
+        }
+        else {
+            labyrinth.changeGrid(position, '.');
+            position = newPosition;
+            labyrinth.changeGrid(newPosition, 'R');
+            return 'V';
+        }
+    }
+
     // Move to valid cells (empty space, item, or exit)
     if (cellContent == '.' || cellContent == 'P' || cellContent == 'I') {
         labyrinth.changeGrid(position, '.');

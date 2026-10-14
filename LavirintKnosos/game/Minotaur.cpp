@@ -34,6 +34,9 @@ char Minotaur::move(Labyrinth& labyrinth) {
         labyrinth.changeGrid(position, '.');
         position = newPosition;
         labyrinth.changeGrid(newPosition, 'M');
+        if (labyrinth.getCell(newPosition) == 'I') {
+            labyrinth.removeItemAt(newPosition);
+        }
         return 'V';
     }
     else {
@@ -60,7 +63,7 @@ int Minotaur::checkIfRobotIsReachable(Labyrinth& labyrinth, bool robotHasShield,
         if (labyrinth.getCell(checkPosition) == 'R') {
             if (robotHasShield) {
                 // Robot protected by shield
-                return 0;
+                return 3;
             }
             else if (robotHasSword) {
                 // Robot kills minotaur with sword
@@ -86,4 +89,8 @@ std::pair<int, int> Minotaur::getPosition() const {
 
 bool Minotaur::getIsAlive() const {
     return isAlive;
+}
+
+void Minotaur::setIsAlive(bool status) {
+    isAlive = status;
 }

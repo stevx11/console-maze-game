@@ -74,6 +74,11 @@ void Game::run() {
             continue; // Invalid move, try again
         }
 
+        else if (robotMoveValid == 'K') {
+            std::cout << "The robot killed the Minotaur with the sword!\n";
+            minotaur->setIsAlive(false);
+        }
+
         // Check win condition
         if (robot->getPosition() == LabyrinthExit) {
             std::cout << "Congratulations! The robot has found the exit!\n";
@@ -99,6 +104,10 @@ void Game::run() {
             else if (robotReachable == 2) {
                 std::cout << "The robot killed the Minotaur with the sword!\n";
                 // Minotaur is now dead no need for further checks
+            }
+            else if (robotReachable == 3) {
+                std::cout << "The robot is protected by the shield!\n";
+                continue;
             }
         }
 
